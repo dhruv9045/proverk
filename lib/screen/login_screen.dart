@@ -101,7 +101,7 @@ class _LoginScreenState extends State<_LoginScreen> {
             onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> RegistrationScreen()));
               },
-            color: Colors.purple,
+            color: Colors.purple[900],
             child: Text("Register", style: TextStyle(color: Colors.white70)),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
           ),

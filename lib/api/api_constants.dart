@@ -1,5 +1,5 @@
-String url_api = "https://reqres.in/api/";
+String baseurl = "https://reqres.in/api/";
 
-String login_api = "${url_api}login";
-String list_user = "${url_api}users?page=2";
-String register_api = "${url_api}register";
+String login_api = "${baseurl}login";
+String list_user = "${baseurl}users?page=2";
+String register_api = "${baseurl}register";

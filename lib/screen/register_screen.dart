@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'login_screen.dart';
 
 class RegistrationScreen extends StatefulWidget {
@@ -91,7 +90,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-
           RaisedButton(
             onPressed: (){
 
@@ -103,7 +101,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           SizedBox(width: 30.0),
           RaisedButton(
             onPressed: (){ Navigator.pop(context, MaterialPageRoute(builder: (context)=> LoginScreen()));},
-            color: Colors.purple,
+            color: Colors.purple[900],
             child: Text("Sign In", style: TextStyle(color: Colors.white70)),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
           ),
@@ -112,3 +110,4 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     );
   }
 }
+
