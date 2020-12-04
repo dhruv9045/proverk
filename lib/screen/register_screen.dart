@@ -8,7 +8,6 @@ class RegistrationScreen extends StatefulWidget {
 }
 
 class _RegistrationScreenState extends State<RegistrationScreen> {
-
   bool _isLoading = false;
   final TextEditingController _pass = TextEditingController();
   final TextEditingController _confirmPass = TextEditingController();
@@ -97,7 +96,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             onPressed: (){
 
             },
-            elevation: 0.0,
             color: Colors.purple,
             child: Text("Register", style: TextStyle(color: Colors.white70)),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -105,7 +103,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           SizedBox(width: 30.0),
           RaisedButton(
             onPressed: (){ Navigator.pop(context, MaterialPageRoute(builder: (context)=> LoginScreen()));},
-            elevation: 0.0,
             color: Colors.purple,
             child: Text("Sign In", style: TextStyle(color: Colors.white70)),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),

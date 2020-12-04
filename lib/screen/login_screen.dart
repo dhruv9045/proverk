@@ -92,7 +92,6 @@ class _LoginScreenState extends State<_LoginScreen> {
               });
               signIn(emailController.text, passwordController.text);
             },
-            elevation: 0.0,
             color: Colors.purple,
             child: Text("Sign In", style: TextStyle(color: Colors.white70)),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
@@ -102,7 +101,6 @@ class _LoginScreenState extends State<_LoginScreen> {
             onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context)=> RegistrationScreen()));
               },
-            elevation: 0.0,
             color: Colors.purple,
             child: Text("Register", style: TextStyle(color: Colors.white70)),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
