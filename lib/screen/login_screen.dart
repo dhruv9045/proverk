@@ -27,6 +27,8 @@ class _LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<_LoginScreen> {
 
   bool _isLoading = false;
+  final TextEditingController emailController = new TextEditingController();
+  final TextEditingController passwordController = new TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -84,7 +86,7 @@ class _LoginScreenState extends State<_LoginScreen> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           RaisedButton(
-            onPressed: emailController.text == ""  ? null : () {
+            onPressed:(){
               setState(() {
                 _isLoading = true;
               });
@@ -109,9 +111,6 @@ class _LoginScreenState extends State<_LoginScreen> {
       ),
     );
   }
-
-  final TextEditingController emailController = new TextEditingController();
-  final TextEditingController passwordController = new TextEditingController();
 
   Container textSection() {
     return Container(

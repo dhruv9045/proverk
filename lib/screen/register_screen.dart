@@ -10,6 +10,8 @@ class RegistrationScreen extends StatefulWidget {
 class _RegistrationScreenState extends State<RegistrationScreen> {
 
   bool _isLoading = false;
+  final TextEditingController _pass = TextEditingController();
+  final TextEditingController _confirmPass = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -56,6 +58,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             cursorColor: Colors.white,
             obscureText: true,
             style: TextStyle(color: Colors.white70),
+            controller: _pass,
             decoration: InputDecoration(
               icon: Icon(Icons.lock, color: Colors.white70),
               hintText: "Password",
@@ -68,6 +71,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             cursorColor: Colors.white,
             obscureText: true,
             style: TextStyle(color: Colors.white70),
+            controller: _confirmPass,
             decoration: InputDecoration(
               icon: Icon(Icons.lock, color: Colors.white70),
               hintText: "Conf. Password",
@@ -91,12 +95,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
           RaisedButton(
             onPressed: (){
-            /* onPressed: emailController.text == ""  ? null : () {
-              setState(() {
-                _isLoading = true;
-              });
-              signIn(emailController.text, passwordController.text);
-            },*/
+
             },
             elevation: 0.0,
             color: Colors.purple,
@@ -111,7 +110,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
             child: Text("Sign In", style: TextStyle(color: Colors.white70)),
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(5.0)),
           ),
-
         ],
       ),
     );
